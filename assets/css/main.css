@@ -85,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 .secSinopsis {
   padding-top: 20px; }
   .secSinopsis a, .secSinopsis a:hover {
-    text-decoration: none;
+    text-decoration: none; }
+  .secSinopsis .macDrama {
     color: #cdcdcf;
     font-style: italic; }
   .secSinopsis .tituloSinop {
@@ -106,5 +107,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: lighter; }
 
 /* Fin Details */
+/* Inicio Actor */
+.macFondoActor {
+  width: 100%;
+  height: 350px;
+  margin-top: -27px;
+  background-color: #c14748;
+  color: white; }
+  .macFondoActor .macBoxTitle {
+    padding-top: 150px; }
+  .macFondoActor .macTituloActor {
+    font-size: 35px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: lighter; }
+
+.macListPeliculasActor {
+  padding-top: 20px; }
+  .macListPeliculasActor .macBoxListPeliculas {
+    padding-left: 71px;
+    color: #cdcdcf;
+    font-size: 18px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400; }
+
+/* Fin Actor */
 
 /*# sourceMappingURL=main.css.map */
