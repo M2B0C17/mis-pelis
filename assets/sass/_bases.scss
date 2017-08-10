@@ -83,6 +83,10 @@ h1,h2,h3,h4,h5,h6{
 	background-color: $color-white;
 	padding-top: 20px;
 
+	a, a:hover{
+		text-decoration: none;
+	}
+
 	.macStartRoja{
 		color: $main-color;
 		font-size: 18px;
@@ -108,6 +112,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .secSinopsis{
+	padding-top: 20px;
+
 	a, a:hover{
 		text-decoration: none;
 		color: $color-grisTexto;
@@ -117,8 +123,25 @@ h1,h2,h3,h4,h5,h6{
 	.tituloSinop{
 		font-weight: 400;
 		color: black;
+		font-size: 18px;
+		font-family: $cuerpo;
+	}
+
+	.macTextParrafo{
+		color: $color-grisTexto;
 		font-size: 15px;
 		font-family: $cuerpo;
+		font-weight: lighter;
+	}
+
+	ul, li{
+		list-style: none;
+	}
+
+	.macListActores, .macSubTituloActores{
+		color: $main-color;
+		font-family: $cuerpo;
+		font-weight: lighter;
 	}
 }
 
