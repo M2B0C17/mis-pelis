@@ -41,3 +41,26 @@ h1,h2,h3,h4,h5,h6{
 	}
 	
 }
+
+
+/* Account Section */
+.navbar{
+	margin-bottom: 0;
+}
+
+.account{
+	background-color: #e2e2e2;
+	height: 100vh;
+	&__form{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		&__label{
+			color: $main-color;
+		}
+		&__btn{
+			color: whitesmoke;
+			background-color: #222;
+			margin-top: 6%;
+		}
+	}
+}
