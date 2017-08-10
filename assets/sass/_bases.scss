@@ -1,0 +1,43 @@
+body{
+	font-family: $cuerpo;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $titulo;
+}
+
+.home{
+	background-color: $main-color;
+	color: whitesmoke;
+	height: 100vh;
+
+	h1{
+		padding-top: 25%;
+    	padding-bottom: 10%;
+    	font-size: 70px;
+	}
+	a{
+		margin: 2%;
+	}
+	.btn-default{
+		width: 100%;
+		color: $main-color;
+	}
+	&__btn{
+		color: whitesmoke;
+	}
+}
+
+.navbar-inverse{
+	a{
+		padding-top: 4%;
+   		padding-right: 3%;
+	}
+	.fa-search{
+		color: whitesmoke;
+	}
+	.blanco{
+		color: whitesmoke;
+	}
+	
+}
