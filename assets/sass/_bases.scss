@@ -38,6 +38,25 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.blanco{
 		color: whitesmoke;
+	}	
+}
+
+.categorias{
+	.pelicula{
+		margin-top: 5%;
+	}
+	span{
+		color:$grey;
 	}
 	
+	a{
+	    background-color: $main-color;
+	    color: whitesmoke;
+	    padding: 5px;
+	    border-radius: 0.5em;
+	    font-size: 10px;
+	}
+	.datos{
+		color: $main-color;
+	}
 }
