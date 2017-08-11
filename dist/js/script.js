@@ -12852,6 +12852,20 @@ $(document).ready(function(){
         }
 });
 
+$(document).ready(function($) {
+    
+    /* Cuando hace click en el botòn favoritos */
+    $("#favoritos").click(function(){
+        console.log("click");
+        alert("Agregada a favoritos");
+        agregarPeliculaAFavoritos();
+    });
+
+    function agregarPeliculaAFavoritos(){
+        var peliculaFavorita = $("#favoritos").parent(".peliculas").find("movie.show_title").val();
+        console.log(peliculaFavorita);
+    }
+});
 /* Parametros */
 var actorsAux = [
     "Georg",
@@ -12897,7 +12911,7 @@ var addPeliculaEnPantalla = function(movie) {
                         <h4>${movie.show_title} <span> ${movie.release_year} | ${movie.category}</span></h4>
                     </div>
                     <div class="col-xs-3">
-                        <a class="btn-">ADD FAVOURITE</a>
+                        <a class="btn" id="favoritos">ADD FAVOURITE</a>
                     </div>
                 </div>
             </div>
@@ -12952,8 +12966,8 @@ var redondearPuntoCinco = function(num) {
 
 var esEntero = function (num){
     return num % 1 == 0;
-
 }
+
 function getFromLocalStorage() {
     $('#usuario').append(localStorage.getItem('username'));
     $('#nombre').append(localStorage.getItem('name'));

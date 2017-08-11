@@ -1,3 +1,17 @@
+$(document).ready(function($) {
+    
+    /* Cuando hace click en el botòn favoritos */
+    $("#favoritos").click(function(){
+        console.log("click");
+        alert("Agregada a favoritos");
+        agregarPeliculaAFavoritos();
+    });
+
+    function agregarPeliculaAFavoritos(){
+        var peliculaFavorita = $("#favoritos").parent(".peliculas").find("movie.show_title").val();
+        console.log(peliculaFavorita);
+    }
+});
 /* Parametros */
 var actorsAux = [
     "Georg",
@@ -43,7 +57,11 @@ var addPeliculaEnPantalla = function(movie) {
                         <h4>${movie.show_title} <span> ${movie.release_year} | ${movie.category}</span></h4>
                     </div>
                     <div class="col-xs-3">
+<<<<<<< HEAD
+                        <a class="btn" id="favoritos">ADD FAVOURITE</a>
+=======
                         <a class="btn-">ADD FAVOURITE</a>
+>>>>>>> 84f30b1abe31024deb39e701e2bdb446e4a07198
                     </div>
                 </div>
             </div>
