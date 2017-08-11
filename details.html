@@ -38,7 +38,7 @@
 	</nav>
 	<!-- Inicio Details -->
 	<!-- Foto de fondo -->
-	<img src="dist/img/pulpFiction.jpg" class="macFoto">
+	<div class="fotoPeli"></div>
 	<!-- Franja roja -->
 	<div class="container-fluid">
 		<div class="row macBackRojo">
@@ -55,11 +55,7 @@
 	<div class="container-fluid">
 		<div class="row secStartSinopsis">
 			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-left">
-				<i class="fa fa-star macStartRoja" aria-hidden="true"></i>
-				<i class="fa fa-star macStartRoja" aria-hidden="true"></i>
-				<i class="fa fa-star macStartRoja" aria-hidden="true"></i>
-				<i class="fa fa-star macStartRoja" aria-hidden="true"></i>
-				<i class="fa fa-star macStartGris" aria-hidden="true"></i>
+				<div id="estrellas"></div>
 			</div>
 			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-right">
 				<a href="#" class="macAddFav">Add Favorites</a>
@@ -67,21 +63,20 @@
 		</div>
 		<div class="row secSinopsis">
 			<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
-				<h5 class="tituloSinop">Pulp Fiction <a href="#" class="macDrama">Drama</a></h5>
-				<p class="macTextParrafo">This stylized crime caper weaves together stories featuring a burger-loving hit man, his philosophical partnet and a washed-p boxer.</p>
+				<div id="tituloPelicula"></div>
+				<div id="sinopsisPelicula"></div>
+				<div id=""></div>
 				<p class="macTextParrafo">Genres: Dramas, Classic Movies, Film Noir, Classic</p>
 				<p class="macTextParrafo">Director: Quentin Tarantino</p>
 				<h5 class="macSubTituloActores">Starring:</h5>
-				<ul>
-					<a href="actor.html"><li class="macListActores">John Travolta</li></a>
-					<a href="actor.html"><li class="macListActores">Samuel L. Jackson</li></a>
-					<a href="actor.html"><li class="macListActores">Uma Thurman</li></a>
-				</ul>
+				<div class="datos"></div>
+				
 			</div>
 		</div>
 	</div>
 	<!-- Fin Details -->
-
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="dist/js/script.js"></script>
+
 </body>
 </html>
