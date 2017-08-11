@@ -12688,7 +12688,6 @@ $(document).ready(function(){
         }
 });
 
-
 /* Parametros */
 var actorsAux = [
     "Georg",
