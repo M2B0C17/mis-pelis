@@ -51,6 +51,57 @@ h1,h2,h3,h4,h5,h6{
 	
 }
 
+
+
+/* Account Section */
+.navbar{
+	margin-bottom: 0;
+}
+
+.account{
+	background-color: #e2e2e2;
+	height: 100vh;
+	&__form{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		&__label{
+			color: $main-color;
+		}
+		&__btn{
+			color: whitesmoke;
+			background-color: #222;
+			margin-top: 6%;
+		}
+	}
+}
+
+// Inicio Profile 
+
+.common-box{
+	padding: 1em 0;
+	.common-box__figure{
+		padding: 1em 0 2em;
+		img{
+			height: 23vh;
+			border-radius: 50%;
+		}
+	}
+
+	.common-box__body{
+		p{
+			color: white;
+			padding: 1em 0 0;
+		}
+	}
+}
+
+
+.bg-fav{
+	background: $main-color;
+}
+
+//Fin Profile
+
 /* Inicio Details */
 .macFoto{
 	width: 100%;
