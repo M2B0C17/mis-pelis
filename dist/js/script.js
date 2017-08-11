@@ -12603,6 +12603,7 @@ if (typeof jQuery === 'undefined') {
 
 
   // AFFIX NO CONFLICT
+  // =================
 
   $.fn.affix.noConflict = function () {
     $.fn.affix = old
@@ -12611,6 +12612,7 @@ if (typeof jQuery === 'undefined') {
 
 
   // AFFIX DATA-API
+  // ==============
 
   $(window).on('load', function () {
     $('[data-spy="affix"]').each(function () {
@@ -12627,7 +12629,6 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
-
 
 $(document).ready(function() {
 	//Local Storage
@@ -12694,40 +12695,40 @@ $(document).ready(function() {
 			$("#country-form").append('<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span><span id="countrySuccessStatus" class="sr-only">(success)</span>');
 			$("#country").attr('aria-describedby', 'countrySuccessStatus');
 		}
+
+		//Local Storage
 		if(name == "" || username == "" || email == "" || country == ""){
 			console.log("error");
 		}else{
 			saveSettings();
 		}
+
 		clear();
 	}
 
 	//limpiar campos
 	function clear(){
-		$(":input")
-		.not(":button, :submit, :reset, :hidden")
-		.val("");
+		$(":input").val("");
 	}
 });
 
 //Local storage
 function loadSettings(){
-	//add email to profile.html
-	$("#ble").append("<span>" + localStorage.name + "</span>");
+	//add input value to profile.html
+	$("#nombre").append("<span>" + localStorage.name + "</span>");
+	$("#usuario").append("<span>" + localStorage.username + "</span>");
+	$("#ble").append("<span>" + localStorage.email + "</span>");
+	$("#pais").append("<span>" + localStorage.country + "</span>");
 }
 
 function saveSettings(){
+	//save input value
 	localStorage.name = $("#name").val();
 	localStorage.username = $("#username").val();
 	localStorage.email = $("#email").val();
 	localStorage.country = $("#country").val();
 
 }
-
-main.js
-
-
-
 
 /* https://netflixroulette.net/api/api.php? */
 
@@ -12853,4 +12854,9 @@ var redondearPuntoCinco = function(num) {
 
 var esEntero = function (num){
     return num % 1 == 0;
+}
+function getFromLocalStorage() {
+    $('#usuario').append(localStorage.getItem('username'));
+    $('#nombre').append(localStorage.getItem('name'));
+    $('#pais').append(localStorage.getItem('country'));
 }
