@@ -1,5 +1,5 @@
 function getFromLocalStorage() {
-    $('#username').append(localStorage.getItem('username'));
-    $('#name').append(localStorage.getItem('name'));
-    $('#country').append(localStorage.getItem('country'));
+    $('#usuario').append(localStorage.getItem('username'));
+    $('#nombre').append(localStorage.getItem('name'));
+    $('#pais').append(localStorage.getItem('country'));
 }

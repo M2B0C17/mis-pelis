@@ -75,35 +75,32 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 
-//Profile css
-
-.common-box__figure{
-	padding: 1em 0 2em;
-	img{
-		height: 23vh;
-		border-radius: 50%;
-	}
-}
+// Inicio Profile 
 
 .common-box{
-	padding: 0 0 2em;
-}
-.common-box__body{
-	label{
-		input{
-			background: white;
-			border: transparent;
+	padding: 1em 0;
+	.common-box__figure{
+		padding: 1em 0 2em;
+		img{
+			height: 23vh;
+			border-radius: 50%;
 		}
 	}
-	p{
-		color: white;
+
+	.common-box__body{
+		p{
+			color: white;
+			padding: 1em 0 0;
+		}
 	}
 }
+
 
 .bg-fav{
 	background: $main-color;
 }
 
+//Fin Profile
 
 /* Inicio Details */
 .macFoto{
@@ -244,16 +241,5 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 
-/* Fin Actor */
-	a{
-	    background-color: $main-color;
-	    color: whitesmoke;
-	    padding: 5px;
-	    border-radius: 0.5em;
-	    font-size: 10px;
-	}
-	.datos{
-		color: $main-color;
-	}
-}
+
 

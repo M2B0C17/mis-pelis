@@ -83,10 +83,10 @@ $(document).ready(function() {
 //Local storage
 function loadSettings(){
 	//add input value to profile.html
-	//$("#ble").append("<span>" + localStorage.name + "</span>");
-	//$("#ble").append("<span>" + localStorage.username + "</span>");
-	//$("#ble").append("<span>" + localStorage.email + "</span>");
-	//$("#ble").append("<span>" + localStorage.country + "</span>");
+	$("#nombre").append("<span>" + localStorage.name + "</span>");
+	$("#usuario").append("<span>" + localStorage.username + "</span>");
+	$("#ble").append("<span>" + localStorage.email + "</span>");
+	$("#pais").append("<span>" + localStorage.country + "</span>");
 }
 
 function saveSettings(){
