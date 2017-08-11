@@ -12695,33 +12695,38 @@ $(document).ready(function() {
 			$("#country-form").append('<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span><span id="countrySuccessStatus" class="sr-only">(success)</span>');
 			$("#country").attr('aria-describedby', 'countrySuccessStatus');
 		}
+
+		//Local Storage
 		if(name == "" || username == "" || email == "" || country == ""){
 			console.log("error");
 		}else{
 			saveSettings();
 		}
+
 		clear();
 	}
 
 	//limpiar campos
 	function clear(){
-		$(":input")
-		.not(":button, :submit, :reset, :hidden")
-		.val("");
+		$(":input").val("");
 	}
 });
 
 //Local storage
 function loadSettings(){
-	//add email to profile.html
+	//add input value to profile.html
 	$("#ble").append("<span>" + localStorage.name + "</span>");
+	$("#ble2").append("<span>" + localStorage.username + "</span>");
+	//$("#ble").append("<span>" + localStorage.email + "</span>");
+	//$("#ble").append("<span>" + localStorage.country + "</span>");
 }
 
 function saveSettings(){
+	//save input value
 	localStorage.name = $("#name").val();
 	localStorage.username = $("#username").val();
-	localStorage.email = $("#email").val();
-	localStorage.country = $("#country").val();
+	//localStorage.email = $("#email").val();
+	//localStorage.country = $("#country").val();
 
 }
 
