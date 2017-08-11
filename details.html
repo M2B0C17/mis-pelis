@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Mis pelis</title>
+	<!-- Google Fonts --> 
+	<link href="https://fonts.googleapis.com/css?family=Anton|Maven+Pro:400,500,700,900&amp;subset=latin-ext,vietnamese" rel="stylesheet">
 	<script src="https://use.fontawesome.com/b98428e78e.js"></script>
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
@@ -32,10 +34,48 @@
 			        <li><a href="actor.html">ACTOR</a></li>
 		      </ul>
 		    </div>
-		</div><!-- /.container-fluid -->
-		
+		</div><!-- /.container-fluid -->		
 	</nav>
-
+	<!-- Inicio Details -->
+	<!-- Foto de fondo -->
+	<div class="fotoPeli"></div>
+	<!-- Franja roja -->
+	<div class="container-fluid">
+		<div class="row macBackRojo">
+			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-left">
+				<h5 class="macTipoTitulo">Watch</h5>
+				<i class="fa fa-angle-right macIconoRight" aria-hidden="true"></i>
+			</div>
+			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-right">
+				<img src="dist/img/play.png" class="macIconoPlay">
+			</div>
+		</div>
+	</div>
+	<!-- Estrellas y sinopsis -->
+	<div class="container-fluid">
+		<div class="row secStartSinopsis">
+			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-left">
+				<div id="estrellas"></div> <!-- Acá van las estrellas -->
+			</div>
+			<div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-right">
+				<a href="#" class="macAddFav">Add Favorites</a>
+			</div>
+		</div>
+		<div class="row secSinopsis">
+			<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+				<div id="tituloPelicula"></div>
+				<div id="sinopsisPelicula"></div>
+				<div id="generoPelicula"></div>
+				<div id="director"></div>
+				<h5 class="macSubTituloActores">Starring:</h5>
+				<div class="actores"></div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Fin Details -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="dist/js/script.js"></script>
+
 </body>
 </html>
