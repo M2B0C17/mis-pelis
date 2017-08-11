@@ -43,7 +43,7 @@ var addPeliculaEnPantalla = function(movie) {
                         <h4>${movie.show_title} <span> ${movie.release_year} | ${movie.category}</span></h4>
                     </div>
                     <div class="col-xs-3">
-                        <a class="btn">ADD FAVOURITE</a>
+                        <a class="btn-">ADD FAVOURITE</a>
                     </div>
                 </div>
             </div>

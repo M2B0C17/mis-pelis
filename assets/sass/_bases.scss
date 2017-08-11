@@ -48,7 +48,10 @@ h1,h2,h3,h4,h5,h6{
 	span{
 		color:$grey;
 	}
-	
+	a{
+	    @include botones();
+	    font-size: 10px;
+  }
 }
 
 
@@ -152,6 +155,16 @@ h1,h2,h3,h4,h5,h6{
 		font-size: 18px;
 		font-weight: 400;
 	}
+}
+
+/*datos login*/
+
+.login__btn{
+	text-decoration:none;
+	@include botones();
+	width: 30%;
+}
+
 
 	.macStartGris{
 		color: $color-grisClaro;
@@ -239,4 +252,3 @@ h1,h2,h3,h4,h5,h6{
 			font-weight: 400;
 		}
 	}
-
