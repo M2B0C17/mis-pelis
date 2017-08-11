@@ -2,6 +2,9 @@ $(document).ready(function() {
 	//Local Storage
 	loadSettings();
 
+	$('input').change(function(){
+		validateForm();
+	});
 	//Validación formulario
 	$("#create-account-btn").on("click", validateForm);
 

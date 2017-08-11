@@ -166,22 +166,21 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-	.macStartGris{
-		color: $color-grisClaro;
-		font-size: 18px;
-		font-weight: 400;
-	}
+.macStartGris{
+	color: $color-grisClaro;
+	font-size: 18px;
+	font-weight: 400;
+}
 
-	.macAddFav{
-		background-color: $main-color;
-		font-family: $cuerpo;
-		font-weight: 400;
-		color: $color-white;
-		font-size: 10px;
-		padding: 5px;
-		border: 1px solid $main-color;
-		border-radius: 4px;
-	}
+.macAddFav{
+	background-color: $main-color;
+	font-family: $cuerpo;
+	font-weight: 400;
+	color: $color-white;
+	font-size: 10px;
+	padding: 5px;
+	border: 1px solid $main-color;
+	border-radius: 4px;
 }
 
 .secSinopsis{
