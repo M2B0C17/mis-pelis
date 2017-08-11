@@ -38,9 +38,19 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.blanco{
 		color: whitesmoke;
+	}	
+}
+
+.peliculas{
+	.pelicula{
+		margin-top: 5%;
+	}
+	span{
+		color:$grey;
 	}
 	
 }
+
 
 
 /* Account Section */
@@ -64,3 +74,186 @@ h1,h2,h3,h4,h5,h6{
 		}
 	}
 }
+
+//Profile css
+
+.common-box__figure{
+	padding: 1em 0 2em;
+	img{
+		height: 23vh;
+		border-radius: 50%;
+	}
+}
+
+.common-box{
+	padding: 0 0 2em;
+}
+.common-box__body{
+	label{
+		input{
+			background: white;
+			border: transparent;
+		}
+	}
+	p{
+		color: white;
+	}
+}
+
+.bg-fav{
+	background: $main-color;
+}
+
+
+/* Inicio Details */
+.macFoto{
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	background-position: center;
+	margin-top: -27px;
+}
+
+.macBackRojo{
+	background-color: $main-color;
+	height: 50px;
+
+	.macTipoTitulo{
+		font-weight: 400;
+		color: $color-white;
+		font-size: 20px;
+		font-family: $cuerpo;
+	}
+
+	.macIconoRight{
+		position: $position;
+		margin-top: -32px;
+		color: $color-white;
+		font-size: 23px;
+    	margin-left: 85px;
+	}
+
+	.macIconoPlay{
+		font-size: 70px;
+		color: $color-white;
+	    position: $position;
+	    margin-top: -36px;
+	    margin-left: -70px;
+	}
+}
+
+.secStartSinopsis{
+	background-color: $color-white;
+	padding-top: 20px;
+
+	a, a:hover{
+		text-decoration: none;
+	}
+
+	.macStartRoja{
+		color: $main-color;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.macStartGris{
+		color: $color-grisClaro;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.macAddFav{
+		background-color: $main-color;
+		font-family: $cuerpo;
+		font-weight: 400;
+		color: $color-white;
+		font-size: 10px;
+		padding: 5px;
+		border: 1px solid $main-color;
+		border-radius: 4px;
+	}
+}
+
+.secSinopsis{
+	padding-top: 20px;
+
+	a, a:hover{
+		text-decoration: none;
+	}
+
+	.macDrama{
+		color: $color-grisTexto;
+		font-style: italic;
+	}
+
+	.tituloSinop{
+		font-weight: 400;
+		color: black;
+		font-size: 18px;
+		font-family: $cuerpo;
+	}
+
+	.macTextParrafo{
+		color: $color-grisTexto;
+		font-size: 15px;
+		font-family: $cuerpo;
+		font-weight: lighter;
+	}
+
+	ul, li{
+		list-style: none;
+	}
+
+	.macListActores, .macSubTituloActores{
+		color: $main-color;
+		font-family: $cuerpo;
+		font-weight: lighter;
+	}
+}
+/* Fin Details */
+
+/* Inicio Actor */
+.macFondoActor{
+	width: 100%;
+	height: 350px;
+	margin-top: -27px;
+	background-color: $main-color;
+	color: $color-white;
+
+	.macBoxTitle{
+		padding-top: 150px;
+	}
+
+	.macTituloActor{
+		font-size: 35px;
+		font-family: $cuerpo;
+		font-weight: lighter;
+	}
+}
+
+.macListPeliculasActor{
+		padding-top: 20px;
+
+		.macBoxListPeliculas{
+			padding-left: 71px;
+			color: $color-grisTexto;
+			font-size: 18px;
+			font-family: $cuerpo;
+			font-weight: 400;
+		}
+	}
+
+
+/* Fin Actor */
+	a{
+	    background-color: $main-color;
+	    color: whitesmoke;
+	    padding: 5px;
+	    border-radius: 0.5em;
+	    font-size: 10px;
+	}
+	.datos{
+		color: $main-color;
+	}
+}
+
