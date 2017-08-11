@@ -12631,6 +12631,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 $(document).ready(function() {
+	//Local Storage
+	loadSettings();
+
+	//Validación formulario
 	$("#create-account-btn").on("click", validateForm);
 
 	function validateForm(event){
@@ -12691,7 +12695,11 @@ $(document).ready(function() {
 			$("#country-form").append('<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span><span id="countrySuccessStatus" class="sr-only">(success)</span>');
 			$("#country").attr('aria-describedby', 'countrySuccessStatus');
 		}
-		
+		if(name == "" || username == "" || email == "" || country == ""){
+			console.log("error");
+		}else{
+			saveSettings();
+		}
 		clear();
 	}
 
@@ -12701,5 +12709,20 @@ $(document).ready(function() {
 		.not(":button, :submit, :reset, :hidden")
 		.val("");
 	}
-});	
+});
+
+//Local storage
+function loadSettings(){
+	//add email to profile.html
+	$("#ble").append("<span>" + localStorage.name + "</span>");
+}
+
+function saveSettings(){
+	localStorage.name = $("#name").val();
+	localStorage.username = $("#username").val();
+	localStorage.email = $("#email").val();
+	localStorage.country = $("#country").val();
+
+}
+
 main.js
