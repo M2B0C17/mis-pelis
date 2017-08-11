@@ -38,6 +38,15 @@ h1,h2,h3,h4,h5,h6{
 	}
 	.blanco{
 		color: whitesmoke;
+	}	
+}
+
+.peliculas{
+	.pelicula{
+		margin-top: 5%;
+	}
+	span{
+		color:$grey;
 	}
 	
 }
@@ -181,4 +190,3 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 
-/* Fin Actor */
