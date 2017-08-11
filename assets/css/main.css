@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Maven+Pro");
+/* Details y Actor */
+body {
+  font-family: "Maven Pro", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anton", sans-serif; }
+
+.home {
+  background-color: #c14748;
+  color: whitesmoke;
+  height: 100vh; }
+  .home h1 {
+    padding-top: 25%;
+    padding-bottom: 10%;
+    font-size: 70px; }
+  .home a {
+    margin: 2%; }
+  .home .btn-default {
+    width: 100%;
+    color: #c14748; }
+  .home__btn {
+    color: whitesmoke; }
+
+.navbar-inverse a {
+  padding-top: 4%;
+  padding-right: 3%; }
+.navbar-inverse .fa-search {
+  color: whitesmoke; }
+.navbar-inverse .blanco {
+  color: whitesmoke; }
+
+.peliculas .pelicula {
+  margin-top: 5%; }
+.peliculas span {
+  color: #BFBFBF; }
+
+/* Inicio Details */
+.macFoto {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-top: -27px; }
+
+.macBackRojo {
+  background-color: #c14748;
+  height: 50px; }
+  .macBackRojo .macTipoTitulo {
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif; }
+  .macBackRojo .macIconoRight {
+    position: absolute;
+    margin-top: -32px;
+    color: white;
+    font-size: 23px;
+    margin-left: 85px; }
+  .macBackRojo .macIconoPlay {
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    margin-top: -36px;
+    margin-left: -70px; }
+
+.secStartSinopsis {
+  background-color: white;
+  padding-top: 20px; }
+  .secStartSinopsis a, .secStartSinopsis a:hover {
+    text-decoration: none; }
+  .secStartSinopsis .macStartRoja {
+    color: #c14748;
+    font-size: 18px;
+    font-weight: 400; }
+  .secStartSinopsis .macStartGris {
+    color: #ebebeb;
+    font-size: 18px;
+    font-weight: 400; }
+  .secStartSinopsis .macAddFav {
+    background-color: #c14748;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid #c14748;
+    border-radius: 4px; }
+
+.secSinopsis {
+  padding-top: 20px; }
+  .secSinopsis a, .secSinopsis a:hover {
+    text-decoration: none; }
+  .secSinopsis .macDrama {
+    color: #cdcdcf;
+    font-style: italic; }
+  .secSinopsis .tituloSinop {
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+    font-family: "Maven Pro", sans-serif; }
+  .secSinopsis .macTextParrafo {
+    color: #cdcdcf;
+    font-size: 15px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: lighter; }
+  .secSinopsis ul, .secSinopsis li {
+    list-style: none; }
+  .secSinopsis .macListActores, .secSinopsis .macSubTituloActores {
+    color: #c14748;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: lighter; }
+
+/* Fin Details */
+/* Inicio Actor */
+.macFondoActor {
+  width: 100%;
+  height: 350px;
+  margin-top: -27px;
+  background-color: #c14748;
+  color: white; }
+  .macFondoActor .macBoxTitle {
+    padding-top: 150px; }
+  .macFondoActor .macTituloActor {
+    font-size: 35px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: lighter; }
+
+.macListPeliculasActor {
+  padding-top: 20px; }
+  .macListPeliculasActor .macBoxListPeliculas {
+    padding-left: 71px;
+    color: #cdcdcf;
+    font-size: 18px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 400; }
+
+/*# sourceMappingURL=main.css.map */
