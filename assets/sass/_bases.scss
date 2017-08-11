@@ -41,3 +41,33 @@ h1,h2,h3,h4,h5,h6{
 	}
 	
 }
+
+//Profile css
+
+.common-box__figure{
+	padding: 1em 0 2em;
+	img{
+		height: 23vh;
+		border-radius: 50%;
+	}
+}
+
+.common-box{
+	padding: 0 0 2em;
+}
+.common-box__body{
+	label{
+		input{
+			background: white;
+			border: transparent;
+		}
+	}
+	p{
+		color: white;
+	}
+}
+
+.bg-fav{
+	background: $main-color;
+}
+
