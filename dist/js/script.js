@@ -12630,4 +12630,18 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
-main.js
+
+self.xmlHttpReq.open('POST', strURL, true);
+        self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        self.xmlHttpReq.onreadystatechange = function () {
+            if (self.xmlHttpReq.readyState == 4) {
+                $('#sentback').hide().fadeOut('slow');
+                updatepage(self.xmlHttpReq.responseText);
+
+
+            }
+        }
+        self.xmlHttpReq.send(getstring());
+        setTimeout(function () {
+            poolMediaDB("core/mediaSpin.php")
+        }, 1500);
