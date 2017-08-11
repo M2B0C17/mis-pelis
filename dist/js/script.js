@@ -12640,10 +12640,15 @@ $(document).ready(function(){
         })
         .done(function(result) {
             console.log(result);
+            var actoress = result.show_cast.split(",");
+
                 $(".fotoPeli").append('<img src="' + result.poster + '" class="macFoto">');
                 $("#tituloPelicula").append('<h5 class="tituloSinop">' + result.show_title + ' <a href="#" class="macDrama">' + result.category + '</a></h5>');
                 $("#sinopsisPelicula").append('<p class="macTextParrafo">' + result.summary + '</p>');
-                $("#estrellas").append('<i class="fa fa-star macStartRoja" aria-hidden="true"></i>');
+                $("#generoPelicula").append('<p class="macTextParrafo">Genres: ' + result.category + '</p>');
+                $("#director").append('<p class="macTextParrafo">Director: ' + result.director + '</p>');
+                $(".actores").append('<ul><a href="actor.html"><li class="macListActores">' + result.show_cast[2] + '</li></a></ul>');
+
 
         })
     .fail(function() {
@@ -12653,3 +12658,5 @@ $(document).ready(function(){
             console.log('Estas Wenazoo Grrr!!!')
         });
 });
+
+/* Estrellas --> <i class="fa fa-star macStartRoja" aria-hidden="true"></i> */
